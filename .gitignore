@@ -1,1 +1,63 @@
-PRD.md
+# ---------------------------------------------------------------------------
+# Environment & secrets
+# ---------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ---------------------------------------------------------------------------
+# Python / FastAPI / Celery (backend/)
+# ---------------------------------------------------------------------------
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+celerybeat-schedule
+celerybeat.pid
+
+# ---------------------------------------------------------------------------
+# Node / Expo / React Native (mobile/)
+# ---------------------------------------------------------------------------
+node_modules/
+.expo/
+.expo-shared/
+dist/
+web-build/
+*.tsbuildinfo
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+.pnp.*
+
+# Native build artifacts
+ios/Pods/
+ios/build/
+ios/*.xcworkspace/xcuserdata/
+android/.gradle/
+android/app/build/
+android/build/
+*.keystore
+!debug.keystore
+
+# ---------------------------------------------------------------------------
+# Editor / OS / tooling
+# ---------------------------------------------------------------------------
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.log
+.claude/
